@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: server-api
+  name: server-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: server-api
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: server-api
+    spec:
+      containers:
+        - env:
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  key: aws_access_key_id
+                  name: credentials
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: aws_secret_access_key
+                  name: credentials
+            - name: POSTGRES_DB
+              valueFrom:
+                secretKeyRef:
+                  key: postgres_db
+                  name: credentials
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: postgres_password
+                  name: credentials
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  key: postgres_user
+                  name: credentials
+            - name: PUBLIC_FIREBASE_PROJECT_ID
+              valueFrom:
+                secretKeyRef:
+                  key: public_firebase_project_id
+                  name: credentials
+          image: xamarsia/spsp-server:0.0.1
+          name: server-api
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/name: server-api
+  name: server-api
+spec:
+  ports:
+    - name: "8080"
+      port: 8080
+      targetPort: 8080
+  selector:
+    app.kubernetes.io/name: server-api

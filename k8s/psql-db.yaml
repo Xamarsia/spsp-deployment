@@ -1,0 +1,94 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: postgres-persistent-volume
+  labels:
+    app.kubernetes.io/name: postgres-volume
+    app.kubernetes.io/app: postgres
+spec:
+  capacity:
+    storage: 300Mi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/data/postgresql/pgdata"
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app.kubernetes.io/name: postgres-pv-claim
+    app.kubernetes.io/app: postgres
+  name: postgres-pv-claim
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 100Mi
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: psql-db
+  name: psql-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: psql-db
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: psql-db
+    spec:
+      containers:
+        - env:
+            - name: POSTGRES_DB
+              valueFrom:
+                secretKeyRef:
+                  key: postgres_db
+                  name: credentials
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: postgres_password
+                  name: credentials
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  key: postgres_user
+                  name: credentials
+          image: postgres:latest
+          name: psql-db
+          ports:
+            - containerPort: 5432
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: postgres-persistent-storage
+      restartPolicy: Always
+      volumes:
+        - name: postgres-persistent-storage
+          persistentVolumeClaim:
+            claimName: postgres-pv-claim
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/name: psql-db
+  name: psql-db
+spec:
+  ports:
+    - name: "5432"
+      port: 5432
+      targetPort: 5432
+  selector:
+    app.kubernetes.io/name: psql-db

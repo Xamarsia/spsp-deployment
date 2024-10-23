@@ -1,0 +1,88 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: frontend-api
+    app.kubernetes.io/part-of: frontend
+  name: frontend-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: frontend-api
+      app.kubernetes.io/part-of: frontend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: frontend-api
+        app.kubernetes.io/part-of: frontend
+    spec:
+      containers:
+        - env:
+            - name: BACKEND_URL
+              valueFrom:
+                configMapKeyRef:
+                  key: server_url
+                  name: frontend-env
+            - name: LOCALE
+              valueFrom:
+                configMapKeyRef:
+                  key: locale
+                  name: frontend-env
+            - name: TIME_ZONE
+              valueFrom:
+                configMapKeyRef:
+                  key: time_zone
+                  name: frontend-env
+            - name: NEXT_PUBLIC_FIREBASE_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: public_firebase_api_key
+                  name: credentials
+            - name: NEXT_PUBLIC_FIREBASE_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  key: public_firebase_app_id
+                  name: credentials
+            - name: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+              valueFrom:
+                secretKeyRef:
+                  key: public_firebase_auth_domain
+                  name: credentials
+            - name: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+              valueFrom:
+                secretKeyRef:
+                  key: public_firebase_messaging_sender_id
+                  name: credentials
+            - name: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+              valueFrom:
+                secretKeyRef:
+                  key: public_firebase_project_id
+                  name: credentials
+            - name: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+              valueFrom:
+                secretKeyRef:
+                  key: public_firebase_storage_bucket
+                  name: credentials
+          image: xamarsia/spsp-frontend:0.0.1
+          name: frontend-api
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/name: frontend-api
+  name: frontend-api
+spec:
+  type: NodePort
+  ports:
+    - port: 3000
+      targetPort: 3000
+      nodePort: 32000
+  selector:
+    app.kubernetes.io/name: frontend-api
