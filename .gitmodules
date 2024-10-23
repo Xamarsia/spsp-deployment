@@ -1,0 +1,6 @@
+[submodule "photo-sharing-platform-frontend"]
+	path = photo-sharing-platform-frontend
+	url = git@github.com:Xamarsia/photo-sharing-platform-frontend.git
+[submodule "simple-photo-sharing-platform"]
+	path = simple-photo-sharing-platform
+	url = git@github.com:Xamarsia/simple-photo-sharing-platform.git
