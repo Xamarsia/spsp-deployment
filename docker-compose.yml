@@ -1,0 +1,44 @@
+services:
+  server-api:
+    container_name: server-api
+    image: xamarsia/spsp-server:0.0.1
+    env_file:
+      - ./simple-photo-sharing-platform/.env
+      - ./simple-photo-sharing-platform/.aws-credentials
+    ports:
+      - 8080:8080
+    networks:
+      - external_network
+      - db_network
+
+  psql-db:
+    container_name: psql-db
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    restart: always
+    env_file:
+      - ./simple-photo-sharing-platform/.env
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - db_network
+
+  frontend-api:
+    container_name: frontend-api
+    image: xamarsia/spsp-frontend:0.0.1
+    env_file:
+      - ./photo-sharing-platform-frontend/.env
+    ports:
+      - 3000:3000
+    networks:
+      - external_network
+
+volumes:
+  db-data:
+
+networks:
+  external_network:
+    name: microservice_network
+    external: true
+  db_network:
