@@ -46,7 +46,7 @@ spec:
                 secretKeyRef:
                   key: public_firebase_project_id
                   name: credentials
-          image: xamarsia/spsp-server:0.0.1
+          image: xamarsia/spsp-server:0.0.2
           name: server-api
           ports:
             - containerPort: 8080

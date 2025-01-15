@@ -1,7 +1,7 @@
 services:
   server-api:
     container_name: server-api
-    image: xamarsia/spsp-server:0.0.1
+    image: xamarsia/spsp-server:0.0.2
     env_file:
       - ./simple-photo-sharing-platform/.env
       - ./simple-photo-sharing-platform/.aws-credentials
@@ -26,7 +26,7 @@ services:
 
   frontend-api:
     container_name: frontend-api
-    image: xamarsia/spsp-frontend:0.0.1
+    image: xamarsia/spsp-frontend:0.0.2
     env_file:
       - ./photo-sharing-platform-frontend/.env
     ports:
