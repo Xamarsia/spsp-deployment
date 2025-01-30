@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  aws_region: ca-central-1
+  aws_s3_posts_bucket_name: spsp-post-images-01
+  aws_s3_profiles_bucket_name: spsp-profile-images-01
+  domain_name: spspdemo.online
+kind: ConfigMap
+metadata:
+  labels:
+    app.kubernetes.io/name: server-env
+  name: server-env
