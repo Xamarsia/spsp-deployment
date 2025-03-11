@@ -92,19 +92,20 @@ git push origin
 <img alt="SignUp" width="500" src="https://github.com/user-attachments/assets/55a08fd4-2ee1-4463-9b92-ced71fa907f3" />
 
 
-
 ## Mobile
 
-<img alt="Smartphone Profile 01" height="600" src="https://github.com/user-attachments/assets/c0418783-2d0f-4ee0-9831-d4fffd6adc4d" />
-<img alt="Smartphone Followings" height="600" src="https://github.com/user-attachments/assets/89caaa53-e7c8-49a1-a91e-38b672975599" />
-<img alt="Smartphone Settings Menu" height="600" src="https://github.com/user-attachments/assets/36ac41ec-7c56-4e9d-9258-57d29eae064a" />
+<img alt="News 01" width="324" src="https://github.com/user-attachments/assets/1c772289-6dd2-427a-9b9b-34f927aa639b" />
+<img alt="News 02" width="324" src="https://github.com/user-attachments/assets/2c530d42-dd51-4314-b3fb-96c730ca6328" />
+<img alt="Profile 01" width="324" src="https://github.com/user-attachments/assets/98bcc6e7-f957-421a-9401-719afd61b703" />
 
-<img alt="Smartphone Settings" height="600" src="https://github.com/user-attachments/assets/77a401c2-0d07-4b9c-b33e-feee9cb1c33e" />
-<img alt="Smartphone Profile 02" height="600" src="https://github.com/user-attachments/assets/b31ee3d5-1cea-43a6-b9f9-337f8d274836" />
-<img alt="Smartphone Post 01" height="600" src="https://github.com/user-attachments/assets/b572dd06-e56e-417b-aa55-2275496779cc" />
+<img alt="Followings" width="324" src="https://github.com/user-attachments/assets/fe77d928-523f-4579-9147-cc8da607200f" />
+<img alt="Settings Menu" width="324" src="https://github.com/user-attachments/assets/0100d252-210b-47d6-9f47-a917c98c83b8" />
+<img alt="Settings" width="324" src="https://github.com/user-attachments/assets/04d37530-3517-401b-8170-c167da4b409a" />
 
-<img alt="Smartphone News 02" height="600" src="https://github.com/user-attachments/assets/bf1574ad-54b7-406c-939d-f4a158e9047d" />
-<img alt="Smartphone News 01" height="600" src="https://github.com/user-attachments/assets/0155816c-29fc-4522-bc42-045bb66fcb33" />
+<img alt="Search" width="324" src="https://github.com/user-attachments/assets/9b1db0a1-e22f-46a5-a009-e23cc739290b" />
+<img alt="Profile 02" width="324" src="https://github.com/user-attachments/assets/5e2a0ccd-1c12-4e0b-8205-d1ab48a49951" />
+<img alt="Post 01" width="324" src="https://github.com/user-attachments/assets/e729564f-5d8a-42b6-a4fd-0aca8000634d" />
+
 
 
 
