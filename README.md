@@ -1,8 +1,8 @@
-<img alt="Profile 01" width="500" src="https://github.com/user-attachments/assets/2d807ad7-1a17-49cf-8a9d-3bec3a5ed911" />
-<img alt="Followings" width="500" src="https://github.com/user-attachments/assets/1a2cd37e-eea9-4264-85ac-7f03fe2a3433" />
+# SPSP (Simple Photo Sharing Platform)
+<img alt="Profile" width="500" src="https://github.com/user-attachments/assets/fb568197-ad6a-40b4-98b6-bbd64528529c" />
+<img alt="Followings" width="500" src="https://github.com/user-attachments/assets/5494f1a3-8b83-4d1a-a8a2-52266e278318" />
 
 Demo: https://spspdemo.online/
-
 
 
 # Description
@@ -72,25 +72,23 @@ git push origin
 
 ## Desktop
 
-<img alt="Profile 02" width="500" src="https://github.com/user-attachments/assets/5cec0da3-58a6-490b-a0d4-d693bb3f419c" />
-<img alt="Settings" width="500" src="https://github.com/user-attachments/assets/ffd08918-6126-407a-bbbf-5c270c2118fe" />
+<img alt="SignIn" width="500" src="https://github.com/user-attachments/assets/35eeea74-511f-405d-9b65-aa4b9803629d" />
+<img alt="SignUp" width="500" src="https://github.com/user-attachments/assets/27a10ca6-831a-45f3-a32b-df4ad08381ef" />
 
-<img alt="Post 01" width="500" src="https://github.com/user-attachments/assets/cde0b1f1-681f-4ec7-9a34-763ce2b5d13f" />
-<img alt="Delete post" width="500" src="https://github.com/user-attachments/assets/b56d01b4-aff2-4584-a811-d192c3a02741" />
+<img alt="ResetPassword" width="500" src="https://github.com/user-attachments/assets/3c73e039-9f68-4447-ba0c-5c71b4021b43" />
+<img alt="News" width="500" src="https://github.com/user-attachments/assets/2573bf9a-ad2d-4926-af4d-7d8e31d5b5e1" />
 
-<img alt="Post 02" width="500" src="https://github.com/user-attachments/assets/0fa5c64f-e6d7-44ee-8520-b16f3d47cbdc" />
-<img alt="Likes list" width="500" src="https://github.com/user-attachments/assets/c1bff84d-3edb-4c29-8613-11932575d2f0" />
+<img alt="Profile" width="500" src="https://github.com/user-attachments/assets/b10dbd00-fa57-438c-b513-8129e9359097" />
+<img alt="Followings" width="500" src="https://github.com/user-attachments/assets/182bd39f-e35f-4b87-82de-5de9eb2c3760" />
 
-<img alt="Search" width="500" src="https://github.com/user-attachments/assets/8c570b6a-3d6b-4877-b678-aba2f695b461" />
-<img alt="Create post" width="500" src="https://github.com/user-attachments/assets/95c26e30-0dbb-4eac-aaee-a364138a711d" />
+<img alt="Settings" width="500" src="https://github.com/user-attachments/assets/4f81634e-ca56-454c-b7ed-281386323182" />
+<img alt="Post" width="500" src="https://github.com/user-attachments/assets/fdb8fc10-4528-4d7d-90a7-c1c0b1505c48" />
 
+<img alt="DeletePost" width="500" src="https://github.com/user-attachments/assets/ecc554a4-4350-483c-8b14-f713851d8b7b" />
+<img alt="EditPost" width="500" src="https://github.com/user-attachments/assets/73e05985-683a-490d-b7f4-9c60deaf98c7" />
 
-<img alt="ResetPassword" width="500" src="https://github.com/user-attachments/assets/33720a15-138a-41fd-986d-cf8ce56167ae" />
-<img alt="News" width="500" src="https://github.com/user-attachments/assets/485cc052-1840-4b12-bb65-c35b34f76d22" />
-
-<img alt="SignIn" width="500" src="https://github.com/user-attachments/assets/9ed891e9-3f3f-4d46-9b13-3f8777ee576a" />
-<img alt="SignUp" width="500" src="https://github.com/user-attachments/assets/55a08fd4-2ee1-4463-9b92-ced71fa907f3" />
-
+<img alt="Likes" width="500" src="https://github.com/user-attachments/assets/50077b41-d936-4951-be6d-64d94aef399d" />
+<img alt="Search" width="500" src="https://github.com/user-attachments/assets/3647542b-982d-454b-8f61-9ab1505e9f4b" />
 
 ## Mobile
 
