@@ -37,23 +37,18 @@ Links:
 1. Install Visual Studio Code (`ms-vscode-remote.remote-containers` extension)
 2. Install Docker Engine  [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) and  [Linux post-installation steps for Docker Engine](https://docs.docker.com/engine/install/linux-postinstall/)  
 3. Create docker network:
-```bash
-docker network create microservice_network
-```
+    ```bash
+    docker network create microservice_network
+    ```
 
 4. Clone a Project with [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-```bash 
-git clone --recurse-submodules https://github.com:Xamarsia/spsp-deployment.git
-cd spsp-deployment
-
-# Pulling in Upstream Changes from the Submodule Remote
-git submodule update --remote
-
-# Update the commits
-git add photo-sharing-platform-frontend
-git commit -m 'Update gitlink to photo-sharing-platform-frontend'
-git push origin 
-```
+    ```bash 
+    git clone --recurse-submodules https://github.com:Xamarsia/spsp-deployment.git
+    cd spsp-deployment
+    
+    # Pulling in Upstream Changes from the Submodule Remote
+    git submodule update --remote
+    ```
 
 ## Setup AWS
 
