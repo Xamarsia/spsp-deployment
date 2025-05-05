@@ -64,7 +64,7 @@ spec:
                 secretKeyRef:
                   key: public_firebase_storage_bucket
                   name: credentials
-          image: xamarsia/spsp-frontend:0.0.6
+          image: xamarsia/spsp-frontend:0.0.7
           name: frontend-api
           ports:
             - containerPort: 3000
