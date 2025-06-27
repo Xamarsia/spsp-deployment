@@ -6,6 +6,18 @@
 
 Demo: https://spspdemo.online/
 
+## Content
+- [Description](#description)
+- [Requirements](#requirements)
+- [Installation](#installation)
+    - [Setup environment](#setup-environment)
+    - [Setup AWS](#setup-aws)
+        - [Setup IAM](#setup-iam)
+        - [Setup S3](#setup-s3)
+    - [Setup Firebase](#setup-firebase)
+- [Screenshots](#screenshots)
+    - [Desktop](#desktop)
+    - [Mobile](#mobile)
 
 # Description
 
@@ -60,9 +72,9 @@ Links:
 1. Create `profiles` and `posts` buckets.
 
 ## Setup Firebase
-### [Log in to Firebase](https://firebase.google.com/codelabs/firebase-nextjs#1)
-### [Create a Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
-### [Add a web app to your Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
+1. [Log in to Firebase](https://firebase.google.com/codelabs/firebase-nextjs#1)
+2. [Create a Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
+3. [Add a web app to your Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
 
 # Screenshots
 
