@@ -1,12 +1,16 @@
-# SPSP (Simple Photo Sharing Platform)
-<p align="center">
-    <img alt="Profile" width="45%" src="https://github.com/user-attachments/assets/fb568197-ad6a-40b4-98b6-bbd64528529c" />
-    <img alt="Followings" width="45%" src="https://github.com/user-attachments/assets/5494f1a3-8b83-4d1a-a8a2-52266e278318" />
-</p>
+<h1 align="center">
+  <p>Simple Photo Sharing Platform (SPSP)</p>
+  <br>
+  	<p align="center">
+	    <img alt="Profile" width="45%" src="https://github.com/user-attachments/assets/fb568197-ad6a-40b4-98b6-bbd64528529c" />
+	    <img alt="Followings" width="45%" src="https://github.com/user-attachments/assets/5494f1a3-8b83-4d1a-a8a2-52266e278318" />
+	</p>
+	<h4 align="left">Demo: https://spspdemo.online/</h4>
+	<p> The Simple Photo Sharing Platform is a web-based application designed to create a dynamic social media platform. </p>
+	<p> It provides a user-friendly interface for content sharing and profile management.</p>
+</h1>
 
-Demo: https://spspdemo.online/
-
-## Content
+# Content
 - [Description](#description)
 - [Requirements](#requirements)
 - [Installation](#installation)
