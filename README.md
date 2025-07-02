@@ -25,12 +25,14 @@ SPSP compatible with various devices to ensure a smooth user experience.
   - [Frontend](#frontend)
   - [Backend](#backend)
   - [General](#general)
-- [Installation](#installation)
+- [Development](#development)
   - [Setup environment](#setup-environment)
   - [Setup AWS](#setup-aws)
     - [Setup IAM](#setup-iam)
     - [Setup S3](#setup-s3)
   - [Setup Firebase](#setup-firebase)
+  - [Setup Backend](#setup-backend)
+  - [Setup Frontend](#setup-frontend)
 - [Screenshots](#screenshots)
   - [Desktop](#desktop)
   - [Mobile](#mobile)
@@ -116,7 +118,7 @@ Backend is stateless and implemented as REST API.
 - `Figma` for project prototyping.
 - `GitHub` (`Git`) - for code storage, sharing, and management.
 
-## Installation
+## Development
 
 ### Setup environment
 
@@ -132,10 +134,6 @@ docker network create microservice_network
 
 ```bash
 git clone --recurse-submodules https://github.com:Xamarsia/spsp-deployment.git
-cd spsp-deployment
-
-# Pulling in Upstream Changes from the Submodule Remote
-git submodule update --remote
 ```
 
 ### Setup AWS
@@ -154,6 +152,14 @@ git submodule update --remote
 1. [Log in to Firebase](https://firebase.google.com/codelabs/firebase-nextjs#1)
 2. [Create a Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
 3. [Add a web app to your Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
+
+### Setup Backend
+
+Execute commands to setup and run [Backend Development](https://github.com/Xamarsia/simple-photo-sharing-platform#development)
+
+### Setup Frontend
+
+Execute commands to setup and run [Frontend Development](https://github.com/Xamarsia/photo-sharing-platform-frontend#development)
 
 ## Screenshots
 
