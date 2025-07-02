@@ -12,7 +12,7 @@ The Simple Photo Sharing Platform is a web-based application designed to create 
 It provides a user-friendly interface for content sharing and profile management.
 </h1>
 
-# Content
+## Table Of Content
 
 - [Description](#description)
 - [Services](#services)
@@ -31,7 +31,7 @@ It provides a user-friendly interface for content sharing and profile management
 - [Future Enhancements](#future-enhancements)
 - [License](#license)
 
-# Description
+## Description
 
 Simple social network for photo sharing (Instagram like). The platform is a microservice client-server application that is implemented using Spring framework on backend and Next.js framework on frontend.
 
@@ -40,12 +40,12 @@ This project consists of [backend](https://github.com/Xamarsia/simple-photo-shar
 Frontend is 100% TypeScript. Components are stateless.
 Backend is stateless and implemented as REST API.
 
-# Services
+## Services
 
 - [`photo-sharing-platform-frontend`](https://github.com/Xamarsia/photo-sharing-platform-frontend): frontend, implemented using Next.js framework
 - [`simple-photo-sharing-platform`](https://github.com/Xamarsia/simple-photo-sharing-platform): backend, implemented using Spring framework
 
-# Features
+## Features
 
 ### Key Features
 
@@ -65,7 +65,7 @@ Backend is stateless and implemented as REST API.
 - Using DTOs to encapsulate data and transport it without any business logic.
 - Implemented strict form validations on the frontend. Inforced strict input validation on the backend.
 
-# Development stack
+## Development stack
 
 ### Frontend
 
@@ -95,9 +95,9 @@ Backend is stateless and implemented as REST API.
 - `Figma` for project prototyping.
 - `GitHub` (`Git`) - for code storage, sharing, and management.
 
-# Installation
+## Installation
 
-## Setup environment
+### Setup environment
 
 1. Install Visual Studio Code (`ms-vscode-remote.remote-containers` extension)
 2. Install Docker Engine  [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) and  [Linux post-installation steps for Docker Engine](https://docs.docker.com/engine/install/linux-postinstall/)  
@@ -117,24 +117,24 @@ cd spsp-deployment
 git submodule update --remote
 ```
 
-## Setup AWS
+### Setup AWS
 
-### Setup IAM
+#### Setup IAM
 
 1. Create user with `AmazonS3FullAccess` permission.
 2. Create access key in user security credentials save `Access key` and `Secret access key` for the future process.
 
-### Setup S3
+#### Setup S3
 
 1. Create `profiles` and `posts` buckets.
 
-## Setup Firebase
+### Setup Firebase
 
 1. [Log in to Firebase](https://firebase.google.com/codelabs/firebase-nextjs#1)
 2. [Create a Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
 3. [Add a web app to your Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
 
-# Screenshots
+## Screenshots
 
 ### Desktop
 
@@ -167,12 +167,12 @@ git submodule update --remote
 	<img alt="Post 01" width="32%" src="https://github.com/user-attachments/assets/e729564f-5d8a-42b6-a4fd-0aca8000634d" />
 </p>
 
-# Future Enhancements
+## Future Enhancements
 
 - Utilizing Nginx Ingress Controller as a reverse proxy and load balancer.
 - Utilizing `slf4j` logging.
 - Adding functionality for comments and tags.
 
-# License
+## License
 
-Licensed under the MIT License. See [LICENSE](./LICENSE.md) file for more details.
+Licensed under the MIT License. See [LICENSE](./LICENSE) file for more details.
