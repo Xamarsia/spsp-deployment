@@ -136,7 +136,7 @@ git submodule update --remote
 
 # Screenshots
 
-## Desktop
+### Desktop
 
 <p align="center">
 	<img alt="SignIn" width="48%" src="https://github.com/user-attachments/assets/35eeea74-511f-405d-9b65-aa4b9803629d" />
@@ -153,7 +153,7 @@ git submodule update --remote
 	<img alt="Search" width="48%" src="https://github.com/user-attachments/assets/3647542b-982d-454b-8f61-9ab1505e9f4b" />
 </p>
 
-## Mobile
+### Mobile
 
 <p align="center">
 	<img alt="News 01" width="32%" src="https://github.com/user-attachments/assets/1c772289-6dd2-427a-9b9b-34f927aa639b" />
@@ -174,3 +174,5 @@ git submodule update --remote
 - Adding functionality for comments and tags.
 
 # License
+
+Licensed under the MIT License. See [LICENSE](./LICENSE.md) file for more details.
