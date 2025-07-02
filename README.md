@@ -7,9 +7,11 @@
 	</p>
 	<h4 align="left">Demo: https://spspdemo.online/</h4>
 
-The Simple Photo Sharing Platform is a web-based application designed to create a dynamic social media platform.
-
+The Simple Photo Sharing Platform (SPSP) is a web-based social media platform.
 It provides a user-friendly interface for content sharing and profile management.
+
+SPSP compatible with various devices to ensure a smooth user experience.
+
 </h1>
 
 ## Table Of Content
@@ -33,17 +35,32 @@ It provides a user-friendly interface for content sharing and profile management
 
 ## Description
 
-Simple social network for photo sharing (Instagram like). The platform is a microservice client-server application that is implemented using Spring framework on backend and Next.js framework on frontend.
+Simple Photo Sharing Platform (SPSP) is a microservice client-server application.
+It designed to foster user interaction and content sharing.
 
-This project consists of [backend](https://github.com/Xamarsia/simple-photo-sharing-platform),  [frontend](https://github.com/Xamarsia/photo-sharing-platform-frontend) services. Also it utilizes Firebase Auth and Amazon S3.
+Users can create customizable profiles that shows their personality through profile picture, bios, and a collection of their posts.
 
-Frontend is 100% TypeScript. Components are stateless.
-Backend is stateless and implemented as REST API.
+The platform encourages social connectivity with follow and unfollow functionalities, allowing users to curate their feeds based on their interests and relationships.
+
+A search feature enables users to find others by username or full name, making it easy to connect with friends and discover new accounts.
+
+SPSP offers an intuitive interface for content sharing, allowing users to create, update, and delete posts effortlessly.
+
+Engagement is enhanced by the inclusion of like and dislike features, which promote a sense of community and allow feedback on shared content.
+
+Platform are web-based and developt to be compatible with various devices. See [Screenshots](./Screenshots) for more details.
+
+This project consists of [backend](https://github.com/Xamarsia/simple-photo-sharing-platform) and [frontend](https://github.com/Xamarsia/photo-sharing-platform-frontend) services. See [Services](./Services) for more details.
 
 ## Services
 
-- [`photo-sharing-platform-frontend`](https://github.com/Xamarsia/photo-sharing-platform-frontend): frontend, implemented using Next.js framework
-- [`simple-photo-sharing-platform`](https://github.com/Xamarsia/simple-photo-sharing-platform): backend, implemented using Spring framework
+- [`photo-sharing-platform-frontend`](https://github.com/Xamarsia/photo-sharing-platform-frontend): frontend, implemented using Next.js framework.
+
+Frontend developed with Typescript. Frontend components are stateless.
+
+- [`simple-photo-sharing-platform`](https://github.com/Xamarsia/simple-photo-sharing-platform): backend, implemented using Spring framework.
+
+Backend is stateless and implemented as REST API.
 
 ## Features
 
