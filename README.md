@@ -72,13 +72,14 @@ Backend is stateless and implemented as REST API.
 
 ### Key Features
 
-- __User Authentication:__ Sign In, Sign Up, and Sign Out system. Password reset option.
+- __User Authentication:__ Sign In, Sign Up and Sign Out system. Password reset option.
+- __Unauthorized Preview:__ Non-authenticated users can view a news feed, posts, and other users' profiles.
 - __User Profiles:__ Customizable profiles with profile picture, bios and posts.
 - __User Interaction:__  Follow and unfollow functionality.
 - __User Search:__ Search for users by username or full name.
 - __Content Sharing:__ Intuitive interface for creating, updating, or deleting posts.
 - __Content Interaction:__ Like and dislike functionality for user engagement.
-- __News Page:__ Posts page.
+- __News Page:__ Posts news feed.
 - __Device Compatibility:__ Compatible with various devices to ensure a smooth user experience.
   
 ### Security Features
@@ -196,9 +197,9 @@ Execute commands to setup and run [Frontend Development](https://github.com/Xama
 
 ## Future Enhancements
 
-- Utilizing Nginx Ingress Controller as a reverse proxy and load balancer.
-- Utilizing `slf4j` logging.
-- Adding functionality for comments and tags.
+- [ ] Utilizing Nginx Ingress Controller as a reverse proxy and load balancer.
+- [ ] Utilizing `slf4j` logging.
+- [ ] Adding functionality for comments and tags.
 
 ## License
 
