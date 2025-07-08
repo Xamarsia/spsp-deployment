@@ -38,7 +38,6 @@ SPSP compatible with various devices to ensure a smooth user experience.
 ## Description
 
 Simple Photo Sharing Platform (SPSP) is a microservice client-server application.
-It designed to foster user interaction and content sharing.
 
 Users can create customizable profiles that shows their personality through profile picture, bios, and a collection of their posts.
 
@@ -87,9 +86,8 @@ This project consists of [backend](https://github.com/Xamarsia/simple-photo-shar
 
 - `Docker` - for isolated development enviroment and deployment.
 - `Kubernetes` - for deploying and managing containerized application.
-- `Visual Studio Code`- an IDE for development.
+- `Visual Studio Code`- preffered IDE for development.
 - `Jira` - for project management and task tracking.
-- `GitHub` (`Git`) - for code storage, sharing, and management.
 
 ## Features
 
