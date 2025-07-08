@@ -17,21 +17,18 @@ SPSP compatible with various devices to ensure a smooth user experience.
 
 - [Description](#description)
 - [Services](#services)
-- [Features](#features)
-  - [Key Features](#key-features)
-  - [Security Features](#security-features)
-- [Development stack](#development-stack)
+- [Development Stack](#development-stack)
   - [Frontend](#frontend)
   - [Backend](#backend)
-  - [General](#general)
-- [Development](#development)
-  - [Setup environment](#setup-environment)
-  - [Setup AWS](#setup-aws)
-    - [Setup IAM](#setup-iam)
-    - [Setup S3](#setup-s3)
-  - [Setup Firebase](#setup-firebase)
-  - [Setup Backend](#setup-backend)
-  - [Setup Frontend](#setup-frontend)
+  - [Common](#common)
+- [Features](#features)
+- [AWS Setup](#aws-setup)
+- [Firebase Setup](#firebase-setup)
+- [Environment Setup](#environment-setup)
+- [Build & Run](#build--run)
+- [UI Prototype](#ui-prototype)
+  - [UI Prototype V 1.0](#ui-prototype-v-10)
+  - [UI Prototype V 2.0](#ui-prototype-v-20)
 - [Screenshots](#screenshots)
   - [Desktop](#desktop)
   - [Mobile](#mobile)
@@ -63,7 +60,7 @@ This project consists of [backend](https://github.com/Xamarsia/simple-photo-shar
 
 - [`simple-photo-sharing-platform`](https://github.com/Xamarsia/simple-photo-sharing-platform): backend, stateless and implemented as REST API using Java and the Spring framework.
 
-## Development stack
+## Development Stack
 
 ### Frontend
 
