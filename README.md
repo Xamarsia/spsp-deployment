@@ -5,14 +5,13 @@
      <img alt="Profile" width="45%" src="https://github.com/user-attachments/assets/fb568197-ad6a-40b4-98b6-bbd64528529c" />
      <img alt="Followings" width="45%" src="https://github.com/user-attachments/assets/5494f1a3-8b83-4d1a-a8a2-52266e278318" />
  </p>
- <h4 align="left">Demo: https://spspdemo.online/</h4>
+</h1>
+
+__Demo: [spspdemo.online](https://spspdemo.online/)__
 
 The Simple Photo Sharing Platform (SPSP) is a web-based social media platform.
-It provides a user-friendly interface for content sharing and profile management.
-
+It provides an interface for content sharing and profile management.
 SPSP compatible with various devices to ensure a smooth user experience.
-
-</h1>
 
 ## Table Of Content
 
@@ -54,152 +53,180 @@ SPSP offers an intuitive interface for content sharing, allowing users to create
 
 Engagement is enhanced by the inclusion of like and dislike features, which promote a sense of community and allow feedback on shared content.
 
-Platform are web-based and developt to be compatible with various devices. See [Screenshots](./Screenshots) for more details.
+Platform are web-based and developt to be compatible with various devices.
 
 This project consists of [backend](https://github.com/Xamarsia/simple-photo-sharing-platform) and [frontend](https://github.com/Xamarsia/photo-sharing-platform-frontend) services. See [Services](./Services) for more details.
 
 ## Services
 
-- [`photo-sharing-platform-frontend`](https://github.com/Xamarsia/photo-sharing-platform-frontend): frontend, implemented using Next.js framework.
+- [`photo-sharing-platform-frontend`](https://github.com/Xamarsia/photo-sharing-platform-frontend): frontend, implemented using Typescript and Next.js ( React ) framework.
 
-Frontend developed with Typescript. Frontend components are stateless.
-
-- [`simple-photo-sharing-platform`](https://github.com/Xamarsia/simple-photo-sharing-platform): backend, implemented using Spring framework.
-
-Backend is stateless and implemented as REST API.
-
-## Features
-
-### Key Features
-
-- __User Authentication:__ Sign In, Sign Up and Sign Out system. Password reset option.
-- __Unauthorized Preview:__ Non-authenticated users can view a news feed, posts, and other users' profiles.
-- __User Profiles:__ Customizable profiles with profile picture, bios and posts.
-- __User Interaction:__  Follow and unfollow functionality.
-- __User Search:__ Search for users by username or full name.
-- __Content Sharing:__ Intuitive interface for creating, updating, or deleting posts.
-- __Content Interaction:__ Like and dislike functionality for user engagement.
-- __News Page:__ Posts news feed.
-- __Device Compatibility:__ Compatible with various devices to ensure a smooth user experience.
-  
-### Security Features
-
-- Authentication using email addresses and passwords or popular identity provider Google. It is implemented by using Firebase Authentication and it leverages industry standards like OAuth 2.0.
-- Custom exception handler to identify and debug errors.
-- Using DTOs to encapsulate data and transport it without any business logic.
-- Implemented strict form validations on the frontend. Inforced strict input validation on the backend.
+- [`simple-photo-sharing-platform`](https://github.com/Xamarsia/simple-photo-sharing-platform): backend, stateless and implemented as REST API using Java and the Spring framework.
 
 ## Development stack
 
 ### Frontend
 
-- `Next.js` ( React ) - React framework that enables client and server rendering, advanced routing, nested layouts, data fetching.
-- `TypeScript` for static type checking.
-- `Tailwind CSS` for CSS styling.
-- `Zod` for forms validation.
-- `Firebase Auth` for providing security authentication.
+- `Next.js` ( React ) - for client and server rendering, advanced routing, nested layouts, data fetching.
+- `TypeScript` - for static type checking.
+- `Tailwind CSS` - for simplified CSS styling.
+- `ESLint` - for code linting.
+- `Zod` - for frontend forms validation.
+- `Firebase Auth` - for providing security authentication.
+- `Figma` - for project prototyping.
 
 ### Backend
 
-- `Spring` - for quickly build standalone backend application. Spring prowides dependency injection, auto-configuration, security features  and simplifies database integration.
+- `Spring` - main development framework. Used for dependency injection, auto-configuration, security features and simplified database integration.
 - `Jakarta Validation` - to write constraints on object models via annotations.
-- `Hibernate ORM` simplifies database interactions by mapping Java objects to database tables.
-- `PostgreSQL` used as main database. Stores posts and users information.
-- `Amazon S3` used as image storage (for posts and users).
-- `Flyway`  control main database(postgresql) migration scripts.
-- `JUnit` is used to write unit tests.
-- `Mockito` - mocking framework for unit tests.
+- `Hibernate ORM` - to simplify database interactions by mapping Java objects to database tables.
+- `PostgreSQL` - used as the main database. Stores posts and users information.
+- `Amazon S3` - used for image storage (for posts and user profiles).
+- `Flyway` - manages database migration scripts for PostgreSQL.
+- `JUnit` - to write unit tests.
+- `Mockito` - to write mocks for unit tests.
 
-### General
+### Common
 
-- `Docker` - helps create and manage an isolated environment for building, sharing, and running applications.
-- `Kubernetes` for deploying and managing containerized applications.
-- `Visual Studio Code` provide customizeble development environment.
-- `Jira` for project management and task tracking.
-- `Figma` for project prototyping.
+- `Docker` - for isolated development enviroment and deployment.
+- `Kubernetes` - for deploying and managing containerized application.
+- `Visual Studio Code`- an IDE for development.
+- `Jira` - for project management and task tracking.
 - `GitHub` (`Git`) - for code storage, sharing, and management.
 
-## Development
+## Features
 
-### Setup environment
+- __User Authentication:__ Sign In, Sign Up, and Sign Out functionalities, including password reset option.
+  - Supports authentication via email and password or external identity provider ( Google ).
+- __Unauthorized Preview:__ Non-authenticated users can view a news feed, posts, and other user's profiles.
+- __User Profiles:__ Customizable profiles with profile picture, bios and posts.
+  - Users can delete their profiles.
+- __User Interaction:__ Follow and unfollow functionality.
+  - Only authorized users are permitted to follow or unfollow users.
+  - All users can view the list of followers or followings.
+- __User Search:__ Search for users by username or full name.
+- __Content Sharing:__ Interface for viewing, creating, updating, or deleting posts.
+  - Post previews are displayed on author's profile in order from newest to oldest.
+- __Content Interaction:__ Like and dislike feature for posts to enhance user engagement.
+  - Only authorized users are permitted to like or dislike posts.
+  - All users can view the list of users who liked a post.
+- __News:__  News feed displays posts for all users with infinite scrolling.
+- __Device Compatibility:__ Compatible with various devices to ensure a smooth user experience.
+  - Web platform with responsive design which adapts the layout and content to various screen sizes.
+- __Responsive design:__ Adaptive user interfaces that adjust seamlessly from smartphone to laptop screen sizes.
+  - The UI adapts on smartphone views for screens with widths ranging from 320px (20rem) to 448px (28rem).
+  - The UI adapts on laptop views for screens wider than 448px (28rem).
+- __Security:__
+  - Authentication is implemented using OAuth 2.0 ( Firebase Authentication ).
+  - Strict validation for user inputs and data integrity.
+  - Custom exception handler for error identification and debugging.
 
-1. Install Visual Studio Code (`ms-vscode-remote.remote-containers` extension)
-2. Install Docker Engine  [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) and  [Linux post-installation steps for Docker Engine](https://docs.docker.com/engine/install/linux-postinstall/)  
-3. Create docker network:
+## AWS Setup
 
-```bash
-docker network create microservice_network
-```
+1. __IAM Setup:__
+    - Create user with `AmazonS3FullAccess` permission.
+    - Create access key in user security credentials save `Access key` and `Secret access key` for the future process.
 
-4. Clone a Project with [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+2. __S3 Setup:__  
+    - Create `profiles` and `posts` buckets.
 
-```bash
-git clone --recurse-submodules https://github.com:Xamarsia/spsp-deployment.git
-```
-
-### Setup AWS
-
-#### Setup IAM
-
-1. Create user with `AmazonS3FullAccess` permission.
-2. Create access key in user security credentials save `Access key` and `Secret access key` for the future process.
-
-#### Setup S3
-
-1. Create `profiles` and `posts` buckets.
-
-### Setup Firebase
+## Firebase Setup
 
 1. [Log in to Firebase](https://firebase.google.com/codelabs/firebase-nextjs#1)
 2. [Create a Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
 3. [Add a web app to your Firebase project](https://firebase.google.com/codelabs/firebase-nextjs#2)
 
-### Setup Backend
+## Environment Setup
 
-Execute commands to setup and run [Backend Development](https://github.com/Xamarsia/simple-photo-sharing-platform#development)
+1. Install Visual Studio Code (`ms-vscode-remote.remote-containers` extension)
+2. [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) and follow the [Linux post-installation steps for Docker Engine](https://docs.docker.com/engine/install/linux-postinstall/).
+3. Clone the project repository with [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-### Setup Frontend
+    ```bash
+    git clone --recurse-submodules https://github.com:Xamarsia/spsp-deployment.git
+    ```
 
-Execute commands to setup and run [Frontend Development](https://github.com/Xamarsia/photo-sharing-platform-frontend#development)
+4. Docker network `microservice_network` required for further communication between the frontend and the backend.
+
+    Execute the following command to create the network:
+
+    ```bash
+    docker network create microservice_network
+    ```
+
+5. [Setup environment for backend](https://github.com/Xamarsia/simple-photo-sharing-platform/tree/main#environment-setup).
+6. [Setup environment for frontend](https://github.com/Xamarsia/photo-sharing-platform-frontend/tree/main#environment-setup).
+
+## Build & Run
+
+1. Open project in VS Code.
+
+2. [Build & Run backend](https://github.com/Xamarsia/simple-photo-sharing-platform/tree/main#build--run).
+3. [Build & Run frontend](https://github.com/Xamarsia/photo-sharing-platform-frontend/tree/main#build--run).
+
+4. Open <http://localhost:3000> with your browser to see the result.
+
+## UI Prototype
+
+Only a few pictures are presented here. The others can be found in the [frontend repository](https://github.com/Xamarsia/photo-sharing-platform-frontend/tree/main#ui-prototype).
+
+This UI has been designed in Figma prior to development.
+
+Although some adjustments were made during the final development stages, the prototype still retains its core functionality and visual design.
+
+### UI Prototype V 1.0
+
+This initial prototype was created on a smartphone without any special styles, focusing primarily on the consistency of the components and the layout of the pages.
+
+[SPSP Prototype V 1.0 Smartphone](https://www.figma.com/design/QdF9eraM5d03OU5veQ9Eno/SPSP-Prototype-1.0-Smartphone?t=zIo7kOkAvCnF3ZwC-1)
+
+<p align="center">
+  <img alt="SignIn" width="24%" src="https://github.com/user-attachments/assets/0ba6abe7-1e91-43d6-90c4-f245e2c8bec8" />
+  <img alt="SignIn" width="24%" src="https://github.com/user-attachments/assets/4ae31493-8985-49da-8aa8-895f748a79aa" />
+  <img alt="SignIn" width="24%" src="https://github.com/user-attachments/assets/2b9b7467-514a-41cd-9ac5-60741c16b983" />
+  <img alt="SignIn" width="24%" src="https://github.com/user-attachments/assets/1eb3d9ab-13c1-49af-87dc-21e0230979ed" />
+</p>
+
+### UI Prototype V 2.0
+
+The second prototype was made to focus on styles and layoutes.
+
+[SPSP Prototype V 2.0](https://www.figma.com/design/JE4wZvS2xRHong3E1sXi5x/SPSP-Prototype-2.0?node-id=0-1&t=dz18uLli4jOSue5b-1)
+
+<p align="center">
+  <img alt="SignIn" width="32%" src="https://github.com/user-attachments/assets/5304f46c-1773-4673-93c1-2654f4eca187" />
+  <img alt="SignIn" width="32%" src="https://github.com/user-attachments/assets/e1bc8d6b-1e58-4ad2-86fd-1bdc9cd11eee" />
+  <img alt="SignIn" width="32%" src="https://github.com/user-attachments/assets/3e2f80fd-f329-4886-8448-114ef69aa49a" />
+</p>
 
 ## Screenshots
+
+Only a few pictures are presented here. The others can be found in the [frontend repository](https://github.com/Xamarsia/photo-sharing-platform-frontend/tree/main#screenshots).
 
 ### Desktop
 
 <p align="center">
- <img alt="SignIn" width="48%" src="https://github.com/user-attachments/assets/35eeea74-511f-405d-9b65-aa4b9803629d" />
- <img alt="SignUp" width="48%" src="https://github.com/user-attachments/assets/27a10ca6-831a-45f3-a32b-df4ad08381ef" />
- <img alt="ResetPassword" width="48%" src="https://github.com/user-attachments/assets/3c73e039-9f68-4447-ba0c-5c71b4021b43" />
- <img alt="News" width="48%" src="https://github.com/user-attachments/assets/2573bf9a-ad2d-4926-af4d-7d8e31d5b5e1" />
- <img alt="Profile" width="48%" src="https://github.com/user-attachments/assets/b10dbd00-fa57-438c-b513-8129e9359097" />
- <img alt="Followings" width="48%" src="https://github.com/user-attachments/assets/182bd39f-e35f-4b87-82de-5de9eb2c3760" />
- <img alt="Settings" width="48%" src="https://github.com/user-attachments/assets/4f81634e-ca56-454c-b7ed-281386323182" />
- <img alt="Post" width="48%" src="https://github.com/user-attachments/assets/fdb8fc10-4528-4d7d-90a7-c1c0b1505c48" />
- <img alt="DeletePost" width="48%" src="https://github.com/user-attachments/assets/ecc554a4-4350-483c-8b14-f713851d8b7b" />
- <img alt="EditPost" width="48%" src="https://github.com/user-attachments/assets/73e05985-683a-490d-b7f4-9c60deaf98c7" />
- <img alt="Likes" width="48%" src="https://github.com/user-attachments/assets/50077b41-d936-4951-be6d-64d94aef399d" />
- <img alt="Search" width="48%" src="https://github.com/user-attachments/assets/3647542b-982d-454b-8f61-9ab1505e9f4b" />
+ <img alt="News" width="32%" src="https://github.com/user-attachments/assets/2573bf9a-ad2d-4926-af4d-7d8e31d5b5e1" />
+ <img alt="Profile" width="32%" src="https://github.com/user-attachments/assets/b10dbd00-fa57-438c-b513-8129e9359097" />
+ <img alt="Settings" width="32%" src="https://github.com/user-attachments/assets/4f81634e-ca56-454c-b7ed-281386323182" />
 </p>
 
 ### Mobile
 
 <p align="center">
- <img alt="News 01" width="32%" src="https://github.com/user-attachments/assets/1c772289-6dd2-427a-9b9b-34f927aa639b" />
-  <img alt="News 02" width="32%" src="https://github.com/user-attachments/assets/2c530d42-dd51-4314-b3fb-96c730ca6328" />
- <img alt="Profile 01" width="32%" src="https://github.com/user-attachments/assets/98bcc6e7-f957-421a-9401-719afd61b703" />
- <img alt="Followings" width="32%" src="https://github.com/user-attachments/assets/fe77d928-523f-4579-9147-cc8da607200f" />
-  <img alt="Settings Menu" width="32%" src="https://github.com/user-attachments/assets/0100d252-210b-47d6-9f47-a917c98c83b8" />
- <img alt="Settings" width="32%" src="https://github.com/user-attachments/assets/04d37530-3517-401b-8170-c167da4b409a" />
- <img alt="Search" width="32%" src="https://github.com/user-attachments/assets/9b1db0a1-e22f-46a5-a009-e23cc739290b" />
- <img alt="Profile 02" width="32%" src="https://github.com/user-attachments/assets/5e2a0ccd-1c12-4e0b-8205-d1ab48a49951" />
- <img alt="Post 01" width="32%" src="https://github.com/user-attachments/assets/e729564f-5d8a-42b6-a4fd-0aca8000634d" />
+  <img alt="Profile 01" width="24%" src="https://github.com/user-attachments/assets/98bcc6e7-f957-421a-9401-719afd61b703" />
+  <img alt="Settings" width="24%" src="https://github.com/user-attachments/assets/04d37530-3517-401b-8170-c167da4b409a" />
+  <img alt="Followings" width="24%" src="https://github.com/user-attachments/assets/fe77d928-523f-4579-9147-cc8da607200f" />
+  <img alt="Post 01" width="24%" src="https://github.com/user-attachments/assets/e729564f-5d8a-42b6-a4fd-0aca8000634d" />
+
 </p>
 
 ## Future Enhancements
 
-- [ ] Utilizing Nginx Ingress Controller as a reverse proxy and load balancer.
-- [ ] Utilizing `slf4j` logging.
-- [ ] Adding functionality for comments and tags.
+- [ ] Utilize Nginx Ingress Controller as a reverse proxy and load balancer.
+- [ ] Utilize `slf4j` logging.
+- [ ] Add functionality for comments and hashtags.
+- [ ] Increase test coverage.
 
 ## License
 
