@@ -84,9 +84,9 @@ This project consists of [backend](https://github.com/Xamarsia/simple-photo-shar
 
 ### Common
 
-- `Docker` - for isolated development enviroment and deployment.
+- `Docker` - for isolated development environment and deployment.
 - `Kubernetes` - for deploying and managing containerized application.
-- `Visual Studio Code`- preffered IDE for development.
+- `Visual Studio Code`- preferred IDE for development.
 - `Jira` - for project management and task tracking.
 
 ## Features
