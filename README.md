@@ -49,7 +49,7 @@ SPSP offers an intuitive interface for content sharing, allowing users to create
 
 Engagement is enhanced by the inclusion of like and dislike features, which promote a sense of community and allow feedback on shared content.
 
-Platform are web-based and developt to be compatible with various devices.
+Platform are web-based and developed to be compatible with various devices.
 
 This project consists of [backend](https://github.com/Xamarsia/simple-photo-sharing-platform) and [frontend](https://github.com/Xamarsia/photo-sharing-platform-frontend) services. See [Services](./Services) for more details.
 
@@ -184,7 +184,7 @@ This initial prototype was created on a smartphone without any special styles, f
 
 ### UI Prototype V 2.0
 
-The second prototype was made to focus on styles and layoutes.
+The second prototype was made to focus on styles and layouts.
 
 [SPSP Prototype V 2.0](https://www.figma.com/design/JE4wZvS2xRHong3E1sXi5x/SPSP-Prototype-2.0?node-id=0-1&t=dz18uLli4jOSue5b-1)
 
