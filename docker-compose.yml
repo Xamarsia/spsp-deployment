@@ -1,10 +1,10 @@
 services:
   server-api:
     container_name: server-api
-    image: xamarsia/spsp-server:1.0.0
+    image: xamarsia/spsp-server:1.0.5
     env_file:
       - ./simple-photo-sharing-platform/.env
-      - ./simple-photo-sharing-platform/.aws-credentials
+      - ./simple-photo-sharing-platform/.minio-credentials
     ports:
       - 8080:8080
     networks:
@@ -24,6 +24,21 @@ services:
     networks:
       - db_network
 
+  minio-db:
+    container_name: minio-db
+    image: minio/minio:latest
+    ports:
+      - "9000:9000" # file upload&preview port
+      - "9001:9001" # console access port
+    restart: always
+    env_file:
+      - ./simple-photo-sharing-platform/.minio-credentials
+    volumes:
+      - "minio-data:/data"
+    networks:
+      - db_network
+    command: server /data  --console-address ":9001"
+
   frontend-api:
     container_name: frontend-api
     image: xamarsia/spsp-frontend:1.0.0
@@ -36,6 +51,7 @@ services:
 
 volumes:
   db-data:
+  minio-data:
 
 networks:
   external_network:
