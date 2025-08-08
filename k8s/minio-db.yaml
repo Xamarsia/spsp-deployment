@@ -86,9 +86,9 @@ spec:
               name: postgres-persistent-storage
           args:
           - server
-          - /data
           - --console-address
           - :9001
+          - /data
       restartPolicy: Always
       volumes:
         - name: postgres-persistent-storage
