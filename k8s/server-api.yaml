@@ -16,35 +16,35 @@ spec:
     spec:
       containers:
         - env:
-            - name: AWS_REGION
+            - name: MINIO_REGION
               valueFrom:
                 configMapKeyRef:
-                  key: aws_region
+                  key: minio_region
                   name: server-env
-            - name: AWS_S3_POSTS_BUCKET_NAME
+            - name: MINIO_POSTS_BUCKET_NAME
               valueFrom:
                 configMapKeyRef:
-                  key: aws_s3_posts_bucket_name
+                  key: minio_posts_bucket_name
                   name: server-env
-            - name: AWS_S3_PROFILES_BUCKET_NAME
+            - name: MINIO_PROFILES_BUCKET_NAME
               valueFrom:
                 configMapKeyRef:
-                  key: aws_s3_profiles_bucket_name
+                  key: minio_profiles_bucket_name
                   name: server-env
             - name: DOMAIN_NAME
               valueFrom:
                 configMapKeyRef:
                   key: domain_name
                   name: server-env
-            - name: AWS_ACCESS_KEY_ID
+            - name: MINIO_ROOT_USER
               valueFrom:
                 secretKeyRef:
-                  key: aws_access_key_id
+                  key: minio_root_user
                   name: credentials
-            - name: AWS_SECRET_ACCESS_KEY
+            - name: MINIO_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  key: aws_secret_access_key
+                  key: minio_root_password
                   name: credentials
             - name: POSTGRES_DB
               valueFrom:
@@ -66,7 +66,7 @@ spec:
                 secretKeyRef:
                   key: public_firebase_project_id
                   name: credentials
-          image: xamarsia/spsp-server:1.0.0
+          image: xamarsia/spsp-server:2.0.0
           name: server-api
           ports:
             - containerPort: 8080
