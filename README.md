@@ -27,8 +27,8 @@ SPSP compatible with various devices to ensure a smooth user experience.
 - [Environment Setup](#environment-setup)
 - [Build & Run](#build--run)
 - [UI Prototype](#ui-prototype)
-  - [UI Prototype V 1.0](#ui-prototype-v-10)
-  - [UI Prototype V 2.0](#ui-prototype-v-20)
+  - [UI Prototype V 1.0 Smartphone](#ui-prototype-v-10-smartphone)
+  - [UI Prototype V 1.0 PC](#ui-prototype-v-10-pc)
 - [Screenshots](#screenshots)
   - [Desktop](#desktop)
   - [Mobile](#mobile)
@@ -169,11 +169,11 @@ This UI has been designed in Figma prior to development.
 
 Although some adjustments were made during the final development stages, the prototype still retains its core functionality and visual design.
 
-### UI Prototype V 1.0
+### UI Prototype V 1.0 Smartphone
 
 This initial prototype was created on a smartphone without any special styles, focusing primarily on the consistency of the components and the layout of the pages.
 
-[SPSP Prototype V 1.0 Smartphone](https://www.figma.com/design/QdF9eraM5d03OU5veQ9Eno/SPSP-Prototype-1.0-Smartphone?t=zIo7kOkAvCnF3ZwC-1)
+[SPSP Prototype V 1.0 Smartphone](https://www.figma.com/design/bgJwULPNm1froxp0PCcRLS/SPSP-Prototype-1.0?node-id=0-1&t=kYQT0MoLztvZ8u6X-1)
 
 <p align="center">
   <img alt="SignIn" width="24%" src="https://github.com/user-attachments/assets/0ba6abe7-1e91-43d6-90c4-f245e2c8bec8" />
@@ -182,11 +182,11 @@ This initial prototype was created on a smartphone without any special styles, f
   <img alt="SignIn" width="24%" src="https://github.com/user-attachments/assets/1eb3d9ab-13c1-49af-87dc-21e0230979ed" />
 </p>
 
-### UI Prototype V 2.0
+### UI Prototype V 1.0 PC
 
 The second prototype was made to focus on styles and layouts.
 
-[SPSP Prototype V 2.0](https://www.figma.com/design/JE4wZvS2xRHong3E1sXi5x/SPSP-Prototype-2.0?node-id=0-1&t=dz18uLli4jOSue5b-1)
+[SPSP Prototype V 1.0 PC](https://www.figma.com/design/bgJwULPNm1froxp0PCcRLS/SPSP-Prototype-1.0?node-id=7601-347&t=kYQT0MoLztvZ8u6X-1)
 
 <p align="center">
   <img alt="SignIn" width="32%" src="https://github.com/user-attachments/assets/5304f46c-1773-4673-93c1-2654f4eca187" />
