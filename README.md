@@ -9,7 +9,7 @@
 
 __Demo: [spspdemo.online](https://spspdemo.online/)__
 
-The Simple Photo Sharing Platform (SPSP) is a web-based social media platform.
+The Simple Photo Sharing Platform (SPSP) is a microservice web-based demo of a social media platform.
 It provides an interface for content sharing and profile management.
 SPSP compatible with various devices to ensure a smooth user experience.
 
