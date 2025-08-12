@@ -27,8 +27,8 @@ SPSP compatible with various devices to ensure a smooth user experience.
 - [Environment Setup](#environment-setup)
 - [Build & Run](#build--run)
 - [UI Prototype](#ui-prototype)
-  - [UI Prototype V 1.0](#ui-prototype-v-10)
-  - [UI Prototype V 2.0](#ui-prototype-v-20)
+  - [UI Prototype V 1.0 Smartphone](#ui-prototype-v-10-smartphone)
+  - [UI Prototype V 1.0 PC](#ui-prototype-v-10-pc)
 - [Screenshots](#screenshots)
   - [Desktop](#desktop)
   - [Mobile](#mobile)
@@ -186,7 +186,7 @@ This initial prototype was created on a smartphone without any special styles, f
 
 The second prototype was made to focus on styles and layouts.
 
-[SPSP Prototype V 2.0](https://www.figma.com/design/JE4wZvS2xRHong3E1sXi5x/SPSP-Prototype-2.0?node-id=0-1&t=dz18uLli4jOSue5b-1)
+[SPSP Prototype V 1.0 PC](https://www.figma.com/design/JE4wZvS2xRHong3E1sXi5x/SPSP-Prototype-2.0?node-id=0-1&t=dz18uLli4jOSue5b-1)
 
 <p align="center">
   <img alt="SignIn" width="32%" src="https://github.com/user-attachments/assets/5304f46c-1773-4673-93c1-2654f4eca187" />
