@@ -51,7 +51,7 @@ Engagement is enhanced by the inclusion of like and dislike features, which prom
 
 Platform are web-based and developed to be compatible with various devices.
 
-This project consists of [backend](https://github.com/Xamarsia/simple-photo-sharing-platform) and [frontend](https://github.com/Xamarsia/photo-sharing-platform-frontend) services. See [Services](./Services) for more details.
+This project consists of [backend](https://github.com/Xamarsia/simple-photo-sharing-platform) and [frontend](https://github.com/Xamarsia/photo-sharing-platform-frontend) services. See [Services](#services) for more details.
 
 ## Services
 
