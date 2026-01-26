@@ -136,7 +136,7 @@ This project consists of [backend](https://github.com/Xamarsia/simple-photo-shar
 3. Clone the project repository with [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
     ```bash
-    git clone --recurse-submodules https://github.com:Xamarsia/spsp-deployment.git
+    git clone --recurse-submodules git@github.com:Xamarsia/spsp-deployment.git
     ```
 
 4. Docker network `microservice_network` required for further communication between the frontend and the backend.
