@@ -20,6 +20,7 @@ SPSP compatible with various devices to ensure a smooth user experience.
   - [Backend](#backend)
   - [Common](#common)
 - [Features](#features)
+- [Architecture Diagram](#architecture-diagram)
 - [AWS Setup](#aws-setup)
 - [Firebase Setup](#firebase-setup)
 - [Environment Setup](#environment-setup)
@@ -113,6 +114,46 @@ This project consists of [backend](https://github.com/Xamarsia/simple-photo-shar
   - Authentication is implemented using OAuth 2.0 ( Firebase Authentication ).
   - Strict validation for user inputs and data integrity.
   - Custom exception handler for error identification and debugging.
+
+
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+
+    subgraph Data_Layer
+        PGDatabase[(PostgreSQL Database)]
+        ObjectStorage[(AWS S3 / MinIO)]
+        PostImagesBucket(Posts Images Bucket)
+        ProfileImagesBucket(Profiles Images Bucket)
+    end
+    
+    subgraph Service_Layer
+        BackendService(Backend Service: Spring REST API) 
+        AuthService(Auth Service: Firebase Auth) 
+    end
+    
+    subgraph UI_Layer
+        WB[Web Browser User]
+        FW[Frontend Web Application: Next.js]
+    end
+
+    %% User Interaction Flow
+    WB --> FW
+    
+    %% API Communication Flow
+    FW -- Request JWT Token --> AuthService
+    FW -- Request with JWT Token --> BackendService
+
+    %% JWT Validation Flow
+    BackendService -- Request Public Keys --> AuthService
+
+    %% Data Storage Interaction
+    BackendService -- Hibernate ORM --> PGDatabase
+    BackendService -- AWS SDK --> ObjectStorage
+    ObjectStorage --- PostImagesBucket
+    ObjectStorage --- ProfileImagesBucket
+```
 
 ## AWS Setup
 
